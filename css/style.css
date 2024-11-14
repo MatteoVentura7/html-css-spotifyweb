@@ -1,0 +1,185 @@
+/*----------------
+    RESET
+------------------*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*----------------
+    COMMONS
+------------------*/
+
+.img-fluid {
+    max-width: 100%;
+}
+
+/*----------------
+    CONTAINER
+------------------*/
+
+h4 {
+    padding-bottom: .625rem;
+    padding-top: 1.5625rem;
+    color: white;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*----------------
+    COMMONS
+------------------*/
+
+body {
+    height: 100vh;
+    
+}
+
+footer {
+    background-color: #282828;
+    height: 8.75rem;
+    
+}
+
+
+
+main {
+    flex-grow: 1;
+    overflow: auto;
+    background-color: #141922;
+}
+
+/*----------------
+    BUTTONS
+------------------*/
+.btn {
+    background-color: transparent;
+    font-family: inherit;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+/*----------------
+    HEADER
+------------------*/
+
+.header {
+    display: flex;
+    height: calc(100% - 8.75rem);
+    
+}
+
+header {
+    background-color: black;
+    width: 3.125rem;
+    padding: .625rem;
+    flex-shrink: 0; 
+}
+
+.header-top {
+    padding-bottom: 30rem;
+} 
+
+.header-top img {
+    width: 1.875rem;
+    padding-bottom: .625rem;
+} 
+
+.header-bottom img {
+    width: 1.875rem;
+    padding-bottom: .625rem;
+} 
+
+.logo-big  {
+    display: none;
+    width: 6.25rem;
+}
+
+.logo-big > img{
+    width: 6.25rem;
+    padding-bottom: 1.875rem;
+} 
+
+.logo-small > img{
+    padding-bottom: 1.875rem;
+} 
+
+header ul {
+    list-style: none;
+    color: white;
+    align-items: center;
+}
+
+.logo-small {
+    display: inline; 
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+    
+}
+
+.txt-decor-  {
+    text-decoration: none;
+    color: grey;
+    font-size: 1.25rem;
+}
+
+i {
+    font-size: xx-large;
+    padding-bottom: 1.25rem;
+    padding-right: .625rem;
+}
+
+.name-play li {
+    padding-bottom: 1.25rem;
+}
+
+/*----------------
+    RESPONSIVE
+    Mobile First
+------------------*/
+
+/* SM >= 576px */
+@media screen and (min-width: 576px) {
+    
+}
+/* S >= 768px */
+@media screen and (min-width: 768px) {
+    header {
+        width: 14.375rem;    
+    }
+
+    .logo-small {
+        display: none;
+    }
+
+    .logo-big {
+      display: inline;
+    }
+
+    .header-top {
+        padding-bottom: 0rem;
+    } 
+
+    .header-bottom {
+        padding-top: 12.5rem;
+    }
+    
+    
+}
+/* M >= 992px */
+@media screen and (min-width: 992px) {
+    
+}
+/* L >= 1200px */
+@media screen and (min-width: 1200px) {
+    
+}
