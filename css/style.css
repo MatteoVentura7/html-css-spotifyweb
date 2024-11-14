@@ -49,6 +49,7 @@ footer {
 
 
 main {
+   
     flex-grow: 1;
     overflow: auto;
     background-color: #141922;
@@ -65,6 +66,15 @@ main {
     cursor: pointer;
 }
 
+.btn-upgrade{
+    border: 1px solid white;
+    color: white;
+    border-radius: 20px;
+    padding: 8px 32px;
+    margin-top: 36px;
+    margin-right: 5px;
+}
+
 /*----------------
     HEADER
 ------------------*/
@@ -73,13 +83,17 @@ main {
     display: flex;
     height: calc(100% - 8.75rem);
     
+    
 }
 
 header {
     background-color: black;
     width: 3.125rem;
     padding: .625rem;
-    flex-shrink: 0; 
+
+    flex-shrink: 0;
+
+    
 }
 
 .header-top {
@@ -89,11 +103,13 @@ header {
 .header-top img {
     width: 1.875rem;
     padding-bottom: .625rem;
+    vertical-align: middle;
 } 
 
 .header-bottom img {
     width: 1.875rem;
     padding-bottom: .625rem;
+    vertical-align: middle;
 } 
 
 .logo-big  {
@@ -126,7 +142,8 @@ a {
     
 }
 
-.txt-decor-  {
+
+.txt-decor  {
     text-decoration: none;
     color: grey;
     font-size: 1.25rem;
@@ -140,6 +157,16 @@ i {
 
 .name-play li {
     padding-bottom: 1.25rem;
+}
+
+/*----------------
+        MAIN
+------------------*/
+
+.banner{
+    background-color: #121319;
+    height: 95px;
+    text-align: right;
 }
 
 /*----------------
@@ -172,6 +199,8 @@ i {
     .header-bottom {
         padding-top: 12.5rem;
     }
+    
+
     
     
 }
