@@ -31,6 +31,11 @@ h4 {
     flex-wrap: wrap;
 }
 
+.col {
+    width: calc(100% / 2);
+    padding: .9375rem;
+}
+
 /*----------------
     COMMONS
 ------------------*/
@@ -207,6 +212,30 @@ i {
     padding: 1.875rem;
 }
 
+.albums h2 {
+    color: white;
+    padding-left: .9375rem;
+    padding-top: 1.875rem;
+    padding-bottom: 1rem;
+}
+
+.album-details h3 {
+    color: white;
+    padding-top: .625rem;
+    padding-bottom: .625rem;
+    text-align: center;
+}
+
+.album-details p {
+    color: grey;
+    text-align: center;
+}
+/*----------------
+    SECTION ALBUMS
+------------------*/
+
+
+
 
 /*----------------
     RESPONSIVE
@@ -234,6 +263,12 @@ i {
     .header-bottom {
         padding-top: 12.5rem;
     } 
+
+    .col {
+        width: calc(100% / 4);
+    }
+
+
     
 
     
@@ -241,6 +276,10 @@ i {
 }
 /* M >= 992px */
 @media screen and (min-width: 992px) {
+
+    .col {
+        width: calc(100% / 6);
+    }
     
 }
 /* L >= 1200px */
