@@ -42,7 +42,7 @@ body {
 
 footer {
     background-color: #282828;
-    height: 8.75rem;
+    height: 5rem;
     
 }
 
@@ -79,9 +79,9 @@ main {
     HEADER
 ------------------*/
 
-.header {
+.header-main {
     display: flex;
-    height: calc(100% - 8.75rem);
+    height: calc(100% - 5rem);
     
     
 }
@@ -90,15 +90,21 @@ header {
     background-color: black;
     width: 3.125rem;
     padding: .625rem;
-
+    overflow-y: auto;
     flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
 
     
 }
 
-.header-top {
-    padding-bottom: 30rem;
-} 
+header::-webkit-scrollbar {
+    display: none;
+}
+
+.header-top  {
+    flex-grow: 1;
+}
 
 .header-top img {
     width: 1.875rem;
@@ -159,6 +165,19 @@ i {
     padding-bottom: 1.25rem;
 }
 
+
+.playlist {
+    flex-grow: 1;
+     overflow: auto; 
+    min-height: 12.5rem;
+}
+
+.playlist::-webkit-scrollbar {
+    display: none; 
+}
+
+
+
 /*----------------
         MAIN
 ------------------*/
@@ -167,7 +186,11 @@ i {
     background-color: #121319;
     height: 95px;
     text-align: right;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
+
 
 /*----------------
     RESPONSIVE
