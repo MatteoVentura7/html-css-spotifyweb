@@ -212,6 +212,11 @@ i {
     padding: 1.875rem;
 }
 
+
+/*----------------
+    SECTION ALBUMS
+------------------*/
+
 .albums h2 {
     color: white;
     padding-left: .9375rem;
@@ -230,10 +235,24 @@ i {
     color: grey;
     text-align: center;
 }
+
 /*----------------
-    SECTION ALBUMS
+    SECTION FOR YOU
 ------------------*/
 
+.for-you > p {
+    color: grey;
+    padding-left: .9375rem;
+    padding-bottom: 1.5625rem;
+    
+}
+
+.for-you h2 {
+    color: white;
+    padding-left: .9375rem;
+    padding-top: 1.875rem;
+    padding-bottom: 1rem;
+}
 
 
 
