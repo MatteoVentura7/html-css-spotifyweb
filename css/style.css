@@ -191,6 +191,22 @@ i {
     z-index: 10;
 }
 
+/*----------------
+    SECTION MAIN NAV
+------------------*/
+
+.main-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    list-style: none;
+    justify-content: center;
+}
+
+.main-nav {
+    padding: 1.875rem;
+}
+
 
 /*----------------
     RESPONSIVE
@@ -215,13 +231,9 @@ i {
       display: inline;
     }
 
-    .header-top {
-        padding-bottom: 0rem;
-    } 
-
     .header-bottom {
         padding-top: 12.5rem;
-    }
+    } 
     
 
     
