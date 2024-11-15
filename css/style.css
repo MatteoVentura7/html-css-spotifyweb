@@ -48,7 +48,6 @@ body {
 footer {
     background-color: #282828;
     height: 5rem;
-    
 }
 
 
@@ -173,14 +172,14 @@ i {
 
 .playlist {
     flex-grow: 1;
-     overflow: auto; 
+    overflow: auto;
     min-height: 12.5rem;
+    min-width: 12.5rem;
 }
 
 .playlist::-webkit-scrollbar {
     display: none; 
-}
-
+} 
 
 
 /*----------------
