@@ -48,6 +48,7 @@ body {
 footer {
     background-color: #282828;
     height: 5rem;
+    padding-left: .625rem;
 }
 
 
@@ -84,7 +85,7 @@ main {
 ------------------*/
 
 .header-main {
-    display: flex;
+    display: flex; 
     height: calc(100% - 5rem);
     
     
@@ -253,6 +254,49 @@ i {
     padding-bottom: 1rem;
 }
 
+
+/*----------------
+    FOOTER
+------------------*/
+
+.nav-left{
+    display: flex;
+    align-items:center;
+    height: 100%;
+    /* padding-top: .625rem; */
+    
+}
+
+.nav-left img {
+    width: 3.125rem;
+    /* padding-top: .625rem;
+    padding-bottom: .625rem;
+    padding-left: .625rem; */
+}
+
+.song-details {
+    align-self: normal;
+    line-height: 0.5;
+    padding-left: .625rem;
+    padding-right: 1.25rem;
+}
+
+.song-details h5 {
+    color: grey;
+}
+
+.font-asw i {
+ font-size: 1.25rem;
+ line-height: 0.1;
+ 
+
+}
+
+.font-asw {
+    display: flex;
+    flex-direction: column;
+    
+}
 
 
 /*----------------
