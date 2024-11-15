@@ -309,6 +309,13 @@ i {
     list-style: none;
     }
 
+.nav-center  i {
+        /* font-size: 1.875rem;*/
+        max-width: 30%;
+        line-height: 0.1;
+    }
+
+
 /*----------------
     NAV-RIGHT
 ------------------*/
@@ -322,10 +329,20 @@ i {
     .nav-right i {
         font-size: .625rem;
         line-height: 0.1;
+        
     }
 
+    .nav-right {
+        padding-right: .625rem;
+    }
 
-
+    .bar-vol {
+    
+            accent-color: black;
+            
+            width: 100%;
+    
+    }
 
 /*----------------
     RESPONSIVE
