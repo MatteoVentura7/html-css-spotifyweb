@@ -16,6 +16,20 @@
     max-width: 100%;
 }
 
+.main-nav a:hover {
+    color: white;
+    transition: 0.7s;
+}
+
+header a:hover {
+    color: white;
+    transition: 0.7s;
+}
+
+hr {
+    color: grey;
+}
+
 /*----------------
     CONTAINER
 ------------------*/
@@ -83,6 +97,11 @@ main {
     margin-right: 5px;
 }
 
+.btn-eff:hover {
+    font-size: 1rem;
+    transition: 0.7s;
+}
+
 /*----------------
     HEADER
 ------------------*/
@@ -102,6 +121,7 @@ header {
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
+    text-align: center;
 
 
     
@@ -137,6 +157,10 @@ header::-webkit-scrollbar {
     padding-bottom: 1.875rem;
 } 
 
+header .logo-big img{
+    margin-right: .625rem;
+} 
+
 .logo-small > img{
     padding-bottom: 1.875rem;
 } 
@@ -162,6 +186,68 @@ a {
     text-decoration: none;
     color: grey;
     font-size: 1.25rem;
+}
+
+
+i {
+    font-size: xx-large;
+    padding-bottom: 1.25rem;
+    padding-right: .625rem;
+}
+
+.name-play li {
+    padding-bottom: 1.25rem;
+}
+
+
+.playlist {
+    flex-grow: 1;
+    overflow: auto;
+    min-height: 12.5rem;
+    min-width: 12.5rem;
+}
+
+.playlist::-webkit-scrollbar {
+    display: none; 
+} 
+
+.profile {
+    padding-top: .625rem;
+}
+
+.profile a {
+    color: white;
+}
+
+.profile img {
+    background-color: grey;
+    border-radius: 50%;
+}
+
+.download img {
+    width: 1.5625rem;
+}
+
+
+/*----------------
+        MAIN
+------------------*/
+
+.banner{
+    background-color: #121319;
+    height: 95px;
+    text-align: right;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.main-nav .hover-link {
+    height: .125rem;
+    width: 2.5rem;
+    background-color: limegreen;
+    margin: auto;
+    margin-top: .1875rem;
 }
 
 .for-you .album-img ,
@@ -192,49 +278,12 @@ a {
     align-items: center;
 }
 
-.albums:hover {
+.albums:hover , .for-you:hover {
     cursor: pointer;
 }
 
 .albums img , .for-you img {
     display: block;
-}
-
-
-i {
-    font-size: xx-large;
-    padding-bottom: 1.25rem;
-    padding-right: .625rem;
-}
-
-.name-play li {
-    padding-bottom: 1.25rem;
-}
-
-
-.playlist {
-    flex-grow: 1;
-    overflow: auto;
-    min-height: 12.5rem;
-    min-width: 12.5rem;
-}
-
-.playlist::-webkit-scrollbar {
-    display: none; 
-} 
-
-
-/*----------------
-        MAIN
-------------------*/
-
-.banner{
-    background-color: #121319;
-    height: 95px;
-    text-align: right;
-    position: sticky;
-    top: 0;
-    z-index: 10;
 }
 
 /*----------------
@@ -293,6 +342,15 @@ i {
     padding-left: .9375rem;
     padding-top: 1.875rem;
     padding-bottom: 1rem;
+}
+
+/*----------------
+    SECTION POPULAR ARTIST
+------------------*/
+
+.for-you .album-img.album-img-circle {
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 
@@ -393,7 +451,8 @@ i {
 /* S >= 768px */
 @media screen and (min-width: 768px) {
     header {
-        width: 14.375rem;    
+        width: 14.375rem; 
+        text-align: left;  
     }
 
     .logo-small {
