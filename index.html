@@ -297,11 +297,11 @@
 
 <div class="nav-left">
   <div class="img-song">
-    <img class="img-fluid" src="img/sinister.jpeg" alt="">
+    <img src="img/sinister.jpeg" alt="">
   </div>
   <div class="song-details">
     <h4>Sinister</h4>
-    <h5>Brano nome</h5>
+    <p>Brano nome</p>
   </div>
   <div class="font-asw">
     <a href=""><i class="fa-regular fa-heart" style="color: #787a7d;"></i></a>
@@ -320,16 +320,22 @@
         <a href=""><i class="fa-solid fa-backward-step" style="color: #ffffff;"></i></a>
         </li>
         <li>
-          <a href=""><i class="fa-regular fa-circle-play" style="color: #ffffff;"></i></a>
+          <a class="font-play" href=""><i class="fa-regular fa-circle-play" style="color: #ffffff;"></i></a>
         </li>
-          <li>
+        <li>
             <a href=""><i class="fa-solid fa-forward-step" style="color: #ffffff;"></i></a>
-          </li>
-          <li>
+        </li>
+        <li>
           <a href=""><i class="fa-solid fa-arrow-rotate-right" style="color: #ffffff;"></i></a>
         </li>
       </ul>
-      <input type="range" class="bar-vol" id="vol" name="vol" min="0" max="50">
+      <div class="bar-time">
+        <strong>0:25</strong>
+      <div class="play-bar">
+        <div class="play-bar-inner"></div>
+      </div>
+      <strong>4:35</strong>
+    </div>
    </nav>
 
    <!--NAV-RIGHT-->
@@ -345,10 +351,11 @@
        <li>
          <a href=""><i class="fa-solid fa-volume-high" style="color: #ffffff;"></i></a>
        </li>
-       <li>
-        <input type="range" class="bar-vol" id="vol" name="vol" min="0" max="50">
-       </li>
      </ul>
+
+     <div class="vol-bar">
+      <div class="vol-bar-inner"></div>
+    </div>
      
   
   </nav>

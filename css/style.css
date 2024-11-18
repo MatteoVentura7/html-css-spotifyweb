@@ -19,11 +19,11 @@ body {
 
 footer {
     background-color: #282828;
-    height: 5rem;
+    height: 6.25rem;
     padding-left: .625rem;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 
 main {
@@ -93,7 +93,7 @@ h4 {
 
 .header-main {
     display: flex; 
-    height: calc(100% - 5rem);
+    height: calc(100% - 6.25rem);
 }
 
 header {
@@ -355,9 +355,10 @@ header a:hover {
 ------------------*/
 
 .nav-left{
-    display: flex;
+    display: flex; 
     align-items:center;
     height: 100%;  
+    width: 20%;
 }
 
 .nav-left img {
@@ -371,8 +372,9 @@ header a:hover {
     padding-right: 1.25rem;
 }
 
-.song-details h5 {
+.song-details p {
     color: grey;
+    line-height: 1;
 }
 
 .font-asw i {
@@ -382,24 +384,59 @@ header a:hover {
 
 .font-asw {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;  
+    padding-top: 1.25rem;
 }
 
 /*----------------
     NAV-CENTER
 ------------------*/
 
+.nav-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    padding-top: .625rem;
+}
+
 .nav-center ul {
     display: flex;
     gap: .9375rem;
     list-style: none;
+    padding-bottom: .625rem;
 }
 
 .nav-center  i {
-    max-width: 30%;
+    font-size: 1.4375rem;
     line-height: 0.1;
 }
 
+.font-play i{
+    font-size: 2.5rem;
+}
+
+.bar-time {
+    display: flex;
+    align-items: center;
+    color: white;
+ }
+
+.play-bar {
+    
+    height: .25rem;
+    width: 9.375rem;
+    background-color: #5a5a5a;
+    margin-left: .625rem;
+    margin-right: .625rem;
+}
+
+.play-bar-inner {
+    width: 25%;
+    height: 100%;
+    background-color: #c1c1c1;
+}
 
 /*----------------
     NAV-RIGHT
@@ -412,18 +449,30 @@ header a:hover {
 }
 
 .nav-right i {
-    font-size: .625rem;
+    font-size: .9375rem;
     line-height: 0.1;
     
 }
 
 .nav-right {
+    display: flex;
+    align-items: center;
+    align-items: baseline;
     padding-right: .625rem;
+    width: 20%;
+    justify-content: flex-end;
 }
 
-.bar-vol {
-    accent-color: black;
-    width: 100%;
+.vol-bar {
+    height: .25rem;
+    width: 6.25rem;
+    background-color: #5a5a5a;
+}
+
+.vol-bar-inner {
+    width: 25%;
+    height: 100%;
+    background-color: #c1c1c1;
 }
 
 /*----------------
@@ -462,6 +511,10 @@ header a:hover {
         display: flex;
         flex-direction: row; 
         
+    }
+
+    .play-bar {
+        width: 18.75rem;
     }
 
 }
