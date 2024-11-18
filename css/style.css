@@ -164,6 +164,43 @@ a {
     font-size: 1.25rem;
 }
 
+.for-you .album-img ,
+.albums .album-img {
+    position: relative;
+    display: block;
+}
+
+.overlay-album {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: transparent;
+}
+
+.overlay-album:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: block;
+    color: #fff;
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.albums:hover {
+    cursor: pointer;
+}
+
+.albums img , .for-you img {
+    display: block;
+}
+
+
 i {
     font-size: xx-large;
     padding-bottom: 1.25rem;
