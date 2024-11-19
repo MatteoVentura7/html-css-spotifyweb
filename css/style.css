@@ -358,11 +358,11 @@ header a:hover {
     display: flex; 
     align-items:center;
     height: 100%;  
-    width: 20%;
+    width: 30%;
 }
 
 .nav-left img {
-    width: 3.125rem;
+    width: 2.5rem;
 }
 
 .song-details {
@@ -388,6 +388,10 @@ header a:hover {
     padding-top: 1.25rem;
 }
 
+.asw-eff i:hover {
+    color: white;
+}
+
 /*----------------
     NAV-CENTER
 ------------------*/
@@ -397,7 +401,7 @@ header a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 60%;
+    width: 40%;
     padding-top: .625rem;
 }
 
@@ -424,7 +428,6 @@ header a:hover {
  }
 
 .play-bar {
-    
     height: .25rem;
     width: 9.375rem;
     background-color: #5a5a5a;
@@ -442,6 +445,15 @@ header a:hover {
     NAV-RIGHT
 ------------------*/
 
+.nav-right {
+    display: flex;
+    align-items: center;
+    align-items: baseline;
+    padding-right: .625rem;
+    width: 30%;
+    justify-content: flex-end;
+}
+
 .nav-right ul {
     display: flex;
     gap: .5rem;
@@ -452,15 +464,6 @@ header a:hover {
     font-size: .9375rem;
     line-height: 0.1;
     
-}
-
-.nav-right {
-    display: flex;
-    align-items: center;
-    align-items: baseline;
-    padding-right: .625rem;
-    width: 20%;
-    justify-content: flex-end;
 }
 
 .vol-bar {
@@ -480,11 +483,39 @@ header a:hover {
     Mobile First
 ------------------*/
 
-/* SM >= 576px */
-@media screen and (min-width: 576px) {
+/* DA 550 PX A 0 */
+@media screen and (max-width: 550px) {
+
+    .play-bar {
+        width: 5rem;
+    }
+
+    .nav-left img {
+        width: 1.875rem;
+    }
+
+    .song-details {
+        font-size: .8125rem;
+    }
     
+    .font-asw i {
+        font-size: .9375rem;
+    }
+
+    .nav-center  i {
+        font-size: .9375rem;
+        line-height: 0;
+    }
+
+    .font-play i{
+        font-size: 1.875rem;
+    }
+
+    .nav-right i {
+        font-size: .625rem;
+    }
 }
-/* S >= 768px */
+/* DA 768px A INFINITO */
 @media screen and (min-width: 768px) {
     header {
         width: 14.375rem; 
@@ -517,16 +548,15 @@ header a:hover {
         width: 18.75rem;
     }
 
+    .nav-left img {
+        width: 3.125rem;
+    }
 }
-/* M >= 992px */
+
+/* DA 992px A INFINITO*/
 @media screen and (min-width: 992px) {
 
     .col {
         width: calc(100% / 6);
-    }
-    
-}
-/* L >= 1200px */
-@media screen and (min-width: 1200px) {
-    
+    }   
 }
